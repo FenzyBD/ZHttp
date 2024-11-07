@@ -1,18 +1,22 @@
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion 28
-    buildToolsVersion "28.0.3"
+    namespace "com.gym.easyokhttp"
 
+    compileSdk 34
 
     defaultConfig {
         minSdkVersion 15
-        targetSdkVersion 28
+        targetSdk 34
         versionCode 1
         versionName "1.0"
 
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
     }
     buildTypes {
         release {

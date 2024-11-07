@@ -1,2 +1,18 @@
+pluginManagement{
+    repositories{
+        google()
+        mavenCentral()
+    }
+}
+dependencyResolutionManagement{
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories{
+        google()
+        mavenCentral()
+        maven { url 'https://jitpack.io' }
+    }
+}
+
+
 include ':app', ':easyokhttp', ':parser', ':zhttp-core', ':zhttp-urlconnection', ':zhttp-parser-jsoup', ':zhttp-parser-gson'
 rootProject.name='ZHttp'

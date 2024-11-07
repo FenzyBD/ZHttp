@@ -1,14 +1,19 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 28
+    namespace "com.zpj.http.demo"
+    compileSdk 34
     defaultConfig {
         applicationId "com.zpj.http.demo"
-        minSdkVersion 19
-        targetSdkVersion 28
+        minSdk 21
+        targetSdk 34
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    compileOptions{
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
     }
     buildTypes {
         release {
